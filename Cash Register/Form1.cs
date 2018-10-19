@@ -108,7 +108,7 @@ namespace Cash_Register
             Thread.Sleep(200);
             g.DrawString("Have a Great Day!", reciptFont, drawBrush, 285, 330);
             Thread.Sleep(400);
-
+            
 
 
 
