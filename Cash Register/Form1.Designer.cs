@@ -49,6 +49,7 @@
             this.totalLabel = new System.Windows.Forms.Label();
             this.changeLabel = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.catch1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bugerLabel
@@ -248,12 +249,21 @@
             this.textBox4.Size = new System.Drawing.Size(144, 31);
             this.textBox4.TabIndex = 21;
             // 
+            // catch1
+            // 
+            this.catch1.AutoSize = true;
+            this.catch1.Location = new System.Drawing.Point(24, 229);
+            this.catch1.Name = "catch1";
+            this.catch1.Size = new System.Drawing.Size(0, 25);
+            this.catch1.TabIndex = 22;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(1149, 865);
+            this.Controls.Add(this.catch1);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.changeLabel);
             this.Controls.Add(this.totalLabel);
@@ -306,6 +316,7 @@
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.Label changeLabel;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label catch1;
     }
 }
 
