@@ -287,7 +287,7 @@
             this.Controls.Add(this.bugerLabel);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Burger palace ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

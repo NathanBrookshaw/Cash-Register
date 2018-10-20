@@ -10,14 +10,14 @@ using System.Windows.Forms;
 using System.Media;
 using System.Threading;
 namespace Cash_Register
-{        
+{
     public partial class Form1 : Form
     {
         // stating the varribles.
         double BURGERS = 4.25;
         double FRIES = 2.20;
         double DRINKS = 1.00;
-        double tax = 0.13;
+        double TAX = 0.13;
         double total;
         double subTotal;
         double taxTotal;
@@ -41,7 +41,7 @@ namespace Cash_Register
         {
             //math
             subTotal = BURGERS + FRIES + DRINKS;
-            taxTotal = subTotal * tax;
+            taxTotal = subTotal * TAX;
             total = subTotal + taxTotal;
 
 
@@ -58,11 +58,11 @@ namespace Cash_Register
             }
             catch
             {
-                
+
                 catch1.Text = "You need to have a number in each textbox.";
                 return;
             }
-            
+
 
 
 
@@ -75,15 +75,15 @@ namespace Cash_Register
             try
             {
                 cash = Convert.ToDouble(textBox4.Text);
-                changeLabel.Text = change.ToString("C"); 
+                changeLabel.Text = change.ToString("C");
             }
             catch
             {
                 changeLabel.Text = "must input a number into the textbox";
             }
-            
 
-            
+
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -92,22 +92,22 @@ namespace Cash_Register
             Graphics g = this.CreateGraphics();
             Pen drawPen = new Pen(Color.Black, 5);
             SolidBrush drawBrush = new SolidBrush(Color.Black);
-          
+
 
 
             SolidBrush outlineBrush = new SolidBrush(Color.White);
 
-            
-            
+
+
             //Choosing Font
             Font reciptTitleFont = new Font("Times New Roman", 18, FontStyle.Bold);
             Font reciptFont = new Font("Times New Roman", 12);
 
 
-           //playing sound
+            //playing sound
             SoundPlayer player = new SoundPlayer(Properties.Resources.Printer);
             //Building reciept
-            
+
             player.Play();
             g.FillRectangle(outlineBrush, 280, 45, 180, 340);
             g.DrawRectangle(drawPen, 280, 45, 180, 340);
